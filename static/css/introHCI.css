@@ -1,0 +1,99 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
+	color: #CC00AA;
+}
+
+/* this style exists to make it obvious that you've successfully linked
+   the CSS to the page. feel free to remove it once the link is working. */
+body {
+     /* border: 1px dotted gray; */
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+body .header {
+     position: fixed;
+     z-index: 1;
+     /* text-align: center; */
+}
+
+body .header h1{
+     font-family: "Lucida Console", monospace;
+     /* padding-left: 40%;*/
+     /* padding-top: 20%;  */
+     /* text-align: center; */
+}
+
+body .header p{
+     font-family: "Lucida Console", monospace;
+     /* padding-left: 40%; */
+     /* text-align: center; */
+}
+
+body h4{
+     position: absolute;
+     font-family: "Lucida Console", monospace;
+}
+
+body .white-triangle{
+     position: absolute;
+     width: 0;
+	height: 0;
+	border-left: 500px solid transparent;
+	border-right: 500px solid transparent;
+	border-top: 1000px solid rgb(255, 255, 255);
+}
+
+body .part1{
+     display:block;
+}
+
+body .part1 .project a img {
+     float: left;
+     width: 800px;
+     height: 500px;
+     opacity:1;
+
+}
+/* body .part1 .project a img:hover {
+     opacity:0.5;
+} */
+
+body .part2{
+     display:block;
+}
+body .part2 .project a img {
+     float: left;
+
+     width: 800px;
+     height: 500px;
+     opacity:1;
+}
+/* body .part2 .project a img:hover {
+     opacity:0.5;
+} */
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("http://lorempixel.com/1140/283");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
